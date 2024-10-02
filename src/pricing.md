@@ -8,7 +8,7 @@ layout: "layouts/page.html"
 <article class="py-2 px-2">
 
 <div class="container">
-  <h2 class="display-3 fw-bold mb-3 lh-1 mb-5" data-cue="slideInUp">A simple, hassle-free, pricing structure:</h2>
+  <h2 class="display-3 fw-bold mb-3 lh-1 mb-5" data-cue="slideInUp">Qué pelotudo que soy!</h2>
   <div class="card p-5">
       <ul class="pricing__structure" data-cues="slideInUp">
         <li class="display-6"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">

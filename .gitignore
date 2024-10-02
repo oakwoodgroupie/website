@@ -9,5 +9,4 @@ Thumbs.db
 .cache
 
 node_modules
-public
 src/_includes/css
