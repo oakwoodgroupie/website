@@ -1,0 +1,4 @@
+{
+    "layout": "layouts/post.html",
+    "permalink": "/company/news/{{ title | slug }}/index.html"
+}

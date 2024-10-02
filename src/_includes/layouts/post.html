@@ -1,0 +1,43 @@
+{% extends "layouts/base.html" %}
+
+{% set pageMainHeader = title %}
+{# {% set pageMainHeader = header %} #}
+
+{# Grab other posts that aren’t this one for the 'more from the news' feed #}
+{% set recommendedPosts = helpers.getSiblingContent(collections.news, page) %}
+
+{# Render post date and any tags that this post has been filed under #}
+{% set pageHeaderSummary %}
+  <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+  {% if tags %}
+    <p class="visually-hidden" id="tags-desc">Tags that this post has been filed under.</p>
+    <ul class="tags-list" aria-describedby="tags-desc">
+      {% for tag in tags %}
+        <li>
+          <a href="/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endset %}
+
+{% block content %}
+
+{% include "partials/page-header.html" %}
+  <article>
+    <div class="container post__container mb-5">   
+    
+      {{ content | safe }}
+    
+    </div>
+     {% if recommendedPosts %}
+    <footer class="recommended-posts bg-light pt-5">
+        {% set postListItems = recommendedPosts %}
+        {% set postListHeadline = 'More Aerlytix news' %}
+        {% include "partials/post-list.html" %}
+    </footer>
+    {% endif %}
+  </article>
+
+  {% include "partials/cta.html" %}
+{% endblock %}

@@ -1,0 +1,108 @@
+{
+    "items": [
+        {
+            "text": "Products",
+            "class": "dropdown",
+            "url": "",
+            "subitems": [
+                {
+                    "text": "Maintenance Forecasting",
+                    "url": "/products/maintenance-forecasting/"
+                },
+                {
+                    "text": "Lease Cashflow Forecasting",
+                    "url": "/products/lease-cashflow-forecasting/"
+                },
+                {
+                    "text": "Pricing and Valuation",
+                    "url": "/products/pricing-and-valuation/"
+                },
+                {
+                    "text": "Portfolio Management",
+                    "url": "/products/portfolio-management/"
+                },
+                {
+                    "text": "Finance Structuring",
+                    "url": "/products/finance-structuring/"
+                },
+                {
+                    "text": "Risk Management",
+                    "url": "/products/risk-management/"
+                },
+                {
+                    "text": "Fleet Tracker",
+                    "url": "/products/fleet-tracker/"
+                }
+            ]
+        },
+        {
+            "text": "Services",
+            "class": "dropdown",
+            "url": "",
+            "subitems": [
+                {
+                    "text": "Advisory",
+                    "url": "/services/advisory/"
+                },
+                {
+                    "text": "Reporting",
+                    "url": "/services/reporting/"
+                },
+                {
+                    "text": "Modeling",
+                    "url": "/services/modeling/"
+                },
+                {
+                    "text": "Integration",
+                    "url": "/services/integrations/"
+                }
+            ]
+        },
+        {
+            "text": "Solutions",
+            "class": "dropdown",
+            "url": "",
+            "subitems": [
+                {
+                    "text": "Lessors",
+                    "url": "/customers/lessors/"
+                },
+                {
+                    "text": "Owners and Investors",
+                    "url": "/customers/owners-and-investors/"
+                },
+                {
+                    "text": "Banks and Lenders",
+                    "url": "/customers/banks-and-lenders/"
+                }
+            ]
+        },
+        {
+            "text": "Company",
+            "class": "dropdown",
+            "url": "",
+            "subitems": [
+                {
+                    "text": "About Us",
+                    "url": "/company/about-us/"
+                },
+                {
+                    "text": "Careers",
+                    "url": "/company/careers/"
+                },
+                {
+                    "text": "News",
+                    "url": "/company/news/"
+                },
+                {
+                    "text": "Contact Us",
+                    "url": "/company/contact-us/"
+                }
+            ]
+        },
+        {
+            "text": "Pricing",
+            "url": "/pricing"
+        }
+    ]
+}
