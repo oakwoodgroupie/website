@@ -1,5 +1,5 @@
 ---
-title: 'Aerlytix'
-metaDesc: 'An analytics and technology solutions company that offers a wide range of services to the aviation finance industry.'
+title: 'Oakwood Group'
+metaDesc: 'Shaping the future of homebuilding'
 layout: 'layouts/home.html'
 ---

@@ -1,0 +1,149 @@
+---
+title: "Developments"
+header: "Developments"
+summary: ""
+layout: "layouts/page.html"
+---
+
+<article class="products my-5">
+<div class="container">
+    <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-5">
+      <div class="col">
+        <div class="card border-0 rounded-0">
+          <div class="card-img-container mb-4">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">Thumbnail</text>
+            </svg>
+          </div>
+          <div class="card-body p-0">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3>Dundrum</h3>
+              <h4 class="badge text-bg-success">Complete</h4>
+            </div>
+            <p class="card-text">Two luxury family homes number 117 & 117A Barton Road East to the market each with
+              2,023 & 2314 square feet (approx.) of carefully curated space, nestled in the heart of Dundrum</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+              </div>
+              <div class="card-arrow-link">
+                <a href=""><svg width="39" height="28" viewBox="0 0 39 28" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.5032 0.208954L39 13.709L25.5032 27.209L24.0715 25.7769L35.1243 14.7215H0V12.6964H35.1243L24.0715 1.64098L25.5032 0.208954Z"
+                      fill="black" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0">
+          <div class="card-img-container mb-4">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">Thumbnail</text>
+            </svg>
+          </div>
+          <div class="card-body p-0">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3>Monkstown</h3>
+              <h4 class="badge text-bg-success">Complete</h4>
+            </div>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+              </div>
+              <div class="card-arrow-link">
+                <a href=""><svg width="39" height="28" viewBox="0 0 39 28" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.5032 0.208954L39 13.709L25.5032 27.209L24.0715 25.7769L35.1243 14.7215H0V12.6964H35.1243L24.0715 1.64098L25.5032 0.208954Z"
+                      fill="black" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0">
+          <div class="card-img-container mb-4">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">Thumbnail</text>
+            </svg>
+          </div>
+          <div class="card-body p-0">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3>Mount Merrion</h3>
+              <h4 class="badge text-bg-success">Complete</h4>
+            </div>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+              </div>
+              <div class="card-arrow-link">
+                <a href=""><svg width="39" height="28" viewBox="0 0 39 28" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.5032 0.208954L39 13.709L25.5032 27.209L24.0715 25.7769L35.1243 14.7215H0V12.6964H35.1243L24.0715 1.64098L25.5032 0.208954Z"
+                      fill="black" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0">
+          <div class="card-img-container mb-4">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">Thumbnail</text>
+            </svg>
+          </div>
+          <div class="card-body p-0">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3>BlackRock</h3>
+              <h4 class="badge text-bg-success">Complete</h4>
+            </div>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+              </div>
+              <div class="card-arrow-link">
+                <a href=""><svg width="39" height="28" viewBox="0 0 39 28" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.5032 0.208954L39 13.709L25.5032 27.209L24.0715 25.7769L35.1243 14.7215H0V12.6964H35.1243L24.0715 1.64098L25.5032 0.208954Z"
+                      fill="black" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </article>

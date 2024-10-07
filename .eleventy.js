@@ -19,31 +19,10 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPassthroughCopy('./src/js');
     eleventyConfig.addPassthroughCopy('./src/images');
 
-    // Returns work items, sorted by display order
-    // eleventyConfig.addCollection('products', collection => {
-    //     return collection
-    //     .getFilteredByGlob('./src/products/*.md')
-    //     .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1));
-    // });
-
-    // eleventyConfig.addCollection('products', collection => {
-    //     return collection
-    //       .getFilteredByGlob('./src/products/*.md')
-    //       .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1))
-    //       .filter(x => x.data.featured);
-    // });
-
     // Returns a collection of blog posts in reverse date order
     eleventyConfig.addCollection('news', collection => {
-        return [...collection.getFilteredByGlob('./src/company/news/*.md')].reverse();
+        return [...collection.getFilteredByGlob('./src/news/*.md')].reverse();
     });
-
-    // Returns a list of people ordered by filename
-    // eleventyConfig.addCollection('people', collection => {
-    //     return collection.getFilteredByGlob('./src/team/*.md').sort((a, b) => {
-    //     return Number(a.fileSlug) > Number(b.fileSlug) ? 1 : -1;
-    //     });
-    // });
 
     // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
     eleventyConfig.setUseGitIgnore(false);
