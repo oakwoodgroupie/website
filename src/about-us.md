@@ -1,92 +1,51 @@
 ---
 title: "About Us"
 header: "About us"
-summary: "Our mission is to transform aviation finance with technology and analytics"
+summary: "We are shaping the future of homebuilding"
 layout: "layouts/page.html"
 ---
 
 <article class="key-results my-5 py-5">
-  <div class="container">
-    <h2 class="display-3 fw-bold mb-5">Company highlights</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4" data-cues="slideInUp">
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="display-4 fw-bold">3,600+</h5>
-            <div class="text-uppercase">Aircraft Entrusted to Aerlytix</div>
-          </div>
-        </div>
-      </div>  
-       <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="display-4 fw-bold">$64.4BN+</h5>
-            <div class="text-uppercase">Value Entrusted to Aerlytix</div>
-          </div>
-        </div>
-      </div>    
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="display-4 fw-bold">100%</h5>
-            <div class="text-uppercase">Software Delivery Success </div>
-          </div>
-        </div>
+  
+  <div class="container marketing">
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
+        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
       </div>
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="display-4 fw-bold">13%</h5>
-            <div class="text-uppercase">Global Fleet in Aerlytix</div>
-          </div>
-        </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
       </div>
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="display-4 fw-bold">In-House</h5>
-            <div class="text-uppercase">Dublin Based Development Team</div>
-          </div>
-        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
       </div>
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="display-4 fw-bold">25</h5>
-            <div class="text-uppercase">Full-time Staff</div>
-          </div>
-        </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
       </div>
     </div>
   </div>
-</article>
-
-<article class="my-5 py-5">
-<div class="container">
-
-<h2 class="display-3 fw-bold mb-5">Core principles of our business</h2>
-<div class="row row-cols-1 row-cols-md-3 g-4 mt-5" data-cues="slideInUp">
-      <div class="col">
-        <div class="card p-4 h-100">
-          <div class="numberit">1</div>
-          <h4 class="fw-bold pb-2">Knowledge</h4>
-          <p>We know aviation finance. We have built an incredible team with extensive insight into the complexities of aviation finance. We harness this knowledge to build and develop powerful and efficient solutions.</p>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card p-4 h-100">
-          <div class="numberit">2</div>
-          <h4 class="fw-bold pb-2">Transformation</h4>
-          <p>We aim to reshape decision-making within the industry by providing technology and analytics solutions to transform processes and bring clarity.</p>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card p-4 h-100">
-          <div class="numberit">3</div>
-          <h4 class="fw-bold pb-2">Customer-centric</h4>
-          <p>Building specialist technology requires intensive customer engagement. Beyond initial requirements gathering and delivery, we are in tune with client needs and evolve as our clients scale.</p>
-        </div>
-      </div>
-    </div>
-</div>
 </article>
