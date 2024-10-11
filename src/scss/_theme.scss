@@ -1,6 +1,5 @@
 :root {
     --bs-border-radius: 0;
-
 }
 
 body {
@@ -27,6 +26,38 @@ body {
     background-color: var(--bs-badge-success-background) !important;
 }
 
+.btn-lg {
+    border-radius: var(--bs-border-radius);
+}
+
 .footer__main {
-    background: #EEE9E0;
+    background: #F5F1EA;
+}
+
+.news-announcement {
+    color: white;
+
+    .container {
+        background: var(--bs-branding-dark-blue);
+    }
+
+    .news_quote {
+        font-size: 1.45rem;
+    }
+}
+
+
+
+
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1540px;
+    }
 }

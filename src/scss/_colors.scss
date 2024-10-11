@@ -1,5 +1,6 @@
 :root {
-    --bs-body-color: #14384C;
+    --bs-branding-dark-blue: #14384C;
+    --bs-body-color: var(--bs-branding-dark-blue);
     --bs-heading-color: var(--bs-body-color);
     --bs-branding-green: #4DA66B;
     --bs-link-color-rgb: var(--bs-branding-green);

@@ -12590,7 +12590,8 @@ fieldset:disabled .btn {
 }
 
 :root {
-  --bs-body-color: #14384C;
+  --bs-branding-dark-blue: #14384C;
+  --bs-body-color: var(--bs-branding-dark-blue);
   --bs-heading-color: var(--bs-body-color);
   --bs-branding-green: #4DA66B;
   --bs-link-color-rgb: var(--bs-branding-green);
@@ -12624,10 +12625,34 @@ body {
   background-color: var(--bs-badge-success-background) !important;
 }
 
-.footer__main {
-  background: #EEE9E0;
+.btn-lg {
+  border-radius: var(--bs-border-radius);
 }
 
+.footer__main {
+  background: #F5F1EA;
+}
+
+.news-announcement {
+  color: white;
+}
+.news-announcement .container {
+  background: var(--bs-branding-dark-blue);
+}
+.news-announcement .news_quote {
+  font-size: 1.45rem;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1540px;
+  }
+}
 @supports (font-variation-settings: normal) {
   html,
   body {
