@@ -12590,30 +12590,114 @@ fieldset:disabled .btn {
 }
 
 :root {
-  --bs-heading-color: #14384C;
   --bs-body-color: #14384C;
-  --bs-link-color-rgb: #4DA66B;
+  --bs-heading-color: var(--bs-body-color);
+  --bs-branding-green: #4DA66B;
+  --bs-link-color-rgb: var(--bs-branding-green);
+  --bs-typography-highlight-text: var(--bs-branding-green);
+  --bs-badge-success-background: var(--bs-branding-green);
 }
 
-.btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #4DA66B;
-  --bs-btn-border-color: #4DA66B;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0b5ed7;
-  --bs-btn-hover-border-color: #0a58ca;
-  --bs-btn-focus-shadow-rgb: 49, 132, 253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0a58ca;
-  --bs-btn-active-border-color: #0a53be;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #0d6efd;
-  --bs-btn-disabled-border-color: #0d6efd;
+:root {
+  --bs-border-radius: 0;
+}
+
+body {
+  font-family: var(--bs-body-font-family);
 }
 
 .navbar-collapse {
   flex-grow: initial;
+}
+
+.badge {
+  --bs-badge-padding-x: 0.85em;
+  --bs-badge-padding-y: 0.75em;
+  --bs-badge-font-size: 0.75em;
+  --bs-badge-font-weight: 700;
+  --bs-badge-color: #fff;
+  --bs-badge-border-radius: var(--bs-border-radius);
+  text-transform: uppercase;
+}
+
+.text-bg-success {
+  background-color: var(--bs-badge-success-background) !important;
+}
+
+.footer__main {
+  background: #EEE9E0;
+}
+
+@supports (font-variation-settings: normal) {
+  html,
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+  }
+}
+@font-face {
+  font-family: "Satoshi";
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
+  src: url(/fonts/Satoshi-Variable.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Satoshi";
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+  font-style: italic;
+  src: url(/fonts/Satoshi-VariableItalic.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Bitter";
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
+  src: url(/fonts/Bitter-VariableFont_wght.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Bitter";
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+  font-style: italic;
+  src: url(/fonts/Bitter-Italic-VariableFont_wght.woff2) format("woff2");
+}
+:root {
+  --bs-body-font-family: "Satoshi", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+  --bs-headings-font-family: "Bitter";
+  --font-weight-medium: 400;
+  --font-body-size: 1.12rem;
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-body-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--bs-headings-font-family);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.45rem;
+}
+
+.highlight-text {
+  color: var(--bs-typography-highlight-text);
+}
+
+.lead {
+  font-weight: var(--font-weight-medium);
 }
 
 .cookieConsentContainer {

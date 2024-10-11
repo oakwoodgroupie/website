@@ -1,5 +1,32 @@
+:root {
+    --bs-border-radius: 0;
+
+}
+
+body {
+    font-family: var(--bs-body-font-family);
+}
+
 .navbar {
     &-collapse {
         flex-grow: initial;
     }
+}
+
+.badge {
+    --bs-badge-padding-x: 0.85em;
+    --bs-badge-padding-y: 0.75em;
+    --bs-badge-font-size: 0.75em;
+    --bs-badge-font-weight: 700;
+    --bs-badge-color: #fff;
+    --bs-badge-border-radius: var(--bs-border-radius);
+    text-transform: uppercase;
+}
+
+.text-bg-success {
+    background-color: var(--bs-badge-success-background) !important;
+}
+
+.footer__main {
+    background: #EEE9E0;
 }

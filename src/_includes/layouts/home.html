@@ -2,16 +2,34 @@
 
 {% block content %}
 
-<div class="hero__home p-3 p-md-5 text-left ">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 pt-5 pb-5">
-        <h1 class="display-1 fw-bold pb-3">Shaping the future of homebuilding</h1>
+<div class="hero__home">
+  <div class="hero_image" style="height:860px;background:grey">
+    <img src="/images/home/hero_image.jpg"
+      style="width: 100vw; height: 100%; object-fit: cover; object-position: center 20%;" alt="" />
+  </div>
+  <div class="container py-5">
+    <div class="row align-items-center pt-5 pb-2">
+      <div class="col-md-10">
+        <h1 class="heading display-2 fw-bold">
+          Sustainable Living, <br />Built with <span class="highlight-text">Excellence and Care</span>
+        </h1>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row align-items-center pt-5 pb-2">
+      <div class="col-md-4"></div>
+      <div class="col-md-8">
+        <p class="lead text-md-start">
+          Welcome to Oakwood Group, where family values meet innovation in sustainable property development. We
+          specialize in creating high-quality, energy-efficient homes across Dublin and the Greater Dublin Area. Our
+          commitment to excellence ensures that each home we build offers a blend of modern convenience and timeless
+          craftsmanship. With Oakwood Group, you’re choosing a home that’s thoughtfully designed, sustainably built, and
+          tailored for your family’s needs.
+        </p>
       </div>
     </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
   </div>
+
 </div>
 
 {% include "partials/home/developments.html" %}
