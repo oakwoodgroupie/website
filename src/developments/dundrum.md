@@ -70,35 +70,70 @@ developmentImgAlt: '117a Barton Street, Dundrum'
   <h2 class="fw-bold mb-5" data-cue="fadeIn">Photography Gallery</h2>
   <div class="row g-4">
     <div class="col-12">
-      <div class="p-3 bg-info-subtle" style="height:600px">Large Photograph</div>
+      <div class="">
+        <img src="/images/developments/dundrum/117a_gallery_1.jpg" alt="117a Gallery Image 1">
+      </div>
     </div>    
     <div class="col-12 col-md-6">
-      <div class="p-3 bg-info-subtle" style="height:600px">Small Photograph</div>
+     <div class="">
+        <img src="/images/developments/dundrum/117a_gallery_2.jpg" alt="117a Gallery Image 1">
+      </div>
     </div>
     <div class="col-12 col-md-6">
-      <div class="p-3 bg-info-subtle" style="height:600px">Small Photograph</div>
+      <div class="">
+        <img src="/images/developments/dundrum/117a_gallery_3.jpg" alt="117a Gallery Image 1">
+      </div>
     </div>
     <div class="col-12">
-      <div class="p-3 bg-info-subtle" style="height:600px">Large Photograph</div>
+      <div class="">
+        <img src="/images/developments/dundrum/117a_gallery_4.jpg" alt="117a Gallery Image 1">
+      </div>
     </div>    
-    <div class="col-12 col-md-6">
-      <div class="p-3 bg-info-subtle" style="height:600px">Small Photograph</div>
+    <div class="col-12 col-md-4">
+      <div class="">
+        <img src="/images/developments/dundrum/117a_gallery_5.jpg" alt="117a Gallery Image 1">
+      </div>
     </div>
-    <div class="col-12 col-md-6">
-      <div class="p-3 bg-info-subtle" style="height:600px">Small Photograph</div>
+    <div class="col-12 col-md-8">
+      <div class="">
+        <img src="/images/developments/dundrum/117a_gallery_6.jpg" alt="117a Gallery Image 1">
+      </div>
     </div>
   </div>
 </div>
 
 {# LOCATION #}
 <div class="container pb-5 mb-5">
-  <h2 class="fw-bold mb-5" data-cue="fadeIn">Photography Gallery</h2>
+  <h2 class="fw-bold mb-5">Photography Gallery</h2>
   <div class="row g-4">
     <div class="col-12">
-      <div class="p-3 bg-info-subtle" style="height:600px">Contact Map</div>
+      <div id="map-dundrum" class="p-3" style="height:700px">Contact Map</div>
     </div>
   </div>
 </div>
+<script>
+  var map = L.map("map-dundrum").setView([53.287438, -6.254583], 17);
+  L.tileLayer(
+    "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }
+  ).addTo(map);
+  var LeafIcon = L.Icon.extend({
+    options: {
+      iconSize: [45, 120],
+    },
+  });
+  var greenIcon = new LeafIcon({
+    iconUrl: "/images/marker.svg",
+  });
+  L.marker([53.287438, -6.254583], { icon: greenIcon })
+    .bindPopup(
+      "117 Barton Rd E, Churchtown Upper, Dublin 14, D14 C9Y7"
+    )
+    .addTo(map);
+</script>
 
 
 {# {% include "components/development_details.html" %} #}
