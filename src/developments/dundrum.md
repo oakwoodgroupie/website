@@ -1,6 +1,9 @@
 ---
 header: 'Dundrum'
 summary: 'Shaping the future of homebuilding'
+location: 'dundrum'
+developmentImg: '117a_hero_landing.jpg'
+developmentImgAlt: '117a Barton Street, Dundrum'
 ---
 
 
