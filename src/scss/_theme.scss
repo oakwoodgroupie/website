@@ -46,6 +46,25 @@ body {
     }
 }
 
+.navbar-nav {
+    .nav-link {
+        color: var(--bs-branding-dark-blue);
+        font-weight: bold;
+
+        &-active-icon {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            margin-left: -4px;
+        }
+
+        &.active {
+            position: relative;
+            color: var(--bs-link-color-rgb);
+        }
+    }
+}
+
 
 
 

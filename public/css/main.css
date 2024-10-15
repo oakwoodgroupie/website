@@ -12643,6 +12643,21 @@ body {
   font-size: 1.45rem;
 }
 
+.navbar-nav .nav-link {
+  color: var(--bs-branding-dark-blue);
+  font-weight: bold;
+}
+.navbar-nav .nav-link-active-icon {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -4px;
+}
+.navbar-nav .nav-link.active {
+  position: relative;
+  color: var(--bs-link-color-rgb);
+}
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,

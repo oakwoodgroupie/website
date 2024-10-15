@@ -51,23 +51,22 @@
     <div class="collapse navbar-collapse" id="navbarMain">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         {% for item in navigation.items %}
-        <li class="nav-item {% if item.class %}{{ item.class }}{% endif %}">
-
-          {% if item.subitems %}
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown"
-            aria-expanded="false">{{ item.text }}</a>
-          <ul class="dropdown-menu shadow-lg" aria-labelledby="dropdown04">
-            {% for subitem in item.subitems %}
-            <li><a class="dropdown-item" href="{{ subitem.url }}">{{ subitem.text }}</a></li>
-            {% endfor %}
-          </ul>
-          {% else %}
-          <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }} class="nav-link "
-            aria-current="page">{{ item.text }}</a>
-          {% endif %}
+        <li class="nav-item">
+          {% set activeState = helpers.getLinkActiveState(item.url, page.url) %}
+          <a href="{{ item.url }}" {{ activeState | safe }} class="nav-link" aria-current="page">{{ item.text }}
+            {% if 'active' in activeState or 'data-state="active"' in activeState %}
+            <svg class="nav-link-active-icon" width="13" height="14" viewBox="0 0 13 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.8608 7.50012L6.5 13.8595L0.13916 7.50012L1.35312 6.28644L5.64165 10.574L5.64165 0.46167L7.35835 0.46167L7.35835 10.574L11.6469 6.28644L12.8608 7.50012Z"
+                fill="#4DA66B" />
+            </svg>
+            {% endif %}
+          </a>
         </li>
         {% endfor %}
       </ul>
+
     </div>
   </div>
 </nav>

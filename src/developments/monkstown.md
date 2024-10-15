@@ -1,9 +1,9 @@
 ---
-header: 'Dundrum'
+header: 'Monkstown'
 summary: 'Shaping the future of homebuilding'
-location: 'dundrum'
-developmentImg: '117a_hero_landing.jpg'
-developmentImgAlt: '117a Barton Street, Dundrum'
+location: 'monkstown'
+developmentImg: '34_hero_landing.jpg'
+developmentImgAlt: '34 Monkstown'
 ---
 
 
@@ -112,7 +112,7 @@ developmentImgAlt: '117a Barton Street, Dundrum'
   </div>
 </div>
 <script>
-  var map = L.map("map-dundrum").setView([53.287438, -6.254583], 17);
+  var map = L.map("map-dundrum").setView([53.287675, -6.161828], 17);
   L.tileLayer(
     "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
     {
@@ -129,7 +129,7 @@ developmentImgAlt: '117a Barton Street, Dundrum'
   var greenIcon = new LeafIcon({
     iconUrl: "/images/marker.svg",
   });
-  L.marker([53.287438, -6.254583], { icon: greenIcon })
+  L.marker([53.287675, -6.161828], { icon: greenIcon })
     .bindPopup(
       "117 Barton Rd E, Churchtown Upper, Dublin 14, D14 C9Y7"
     )

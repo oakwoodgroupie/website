@@ -8,14 +8,19 @@ module.exports = {
      * @returns {String} The attributes or empty
      */
     getLinkActiveState(itemUrl, pageUrl) {
+      // Remove trailing slashes from itemUrl and pageUrl for comparison
+      itemUrl = itemUrl.replace(/\/$/, "");
+      pageUrl = pageUrl.replace(/\/$/, "");
+
       let response = '';
   
       if (itemUrl === pageUrl) {
         response = ' class="nav-link active"';
       }
   
+      // If the item is a parent path of the current page
       if (itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0) {
-        response += ' data-state="active"';
+        response = ' class="nav-link active" data-state="active"';
       }
   
       return response;

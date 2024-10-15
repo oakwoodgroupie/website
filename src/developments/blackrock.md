@@ -1,7 +1,7 @@
 ---
-header: 'Dundrum'
+header: 'BlackRock'
 summary: 'Shaping the future of homebuilding'
-location: 'dundrum'
+location: 'blackrock'
 developmentImg: '117a_hero_landing.jpg'
 developmentImgAlt: '117a Barton Street, Dundrum'
 ---
@@ -123,7 +123,6 @@ developmentImgAlt: '117a Barton Street, Dundrum'
   var LeafIcon = L.Icon.extend({
     options: {
       iconSize: [45, 120],
-      iconAnchor: [22.5, 88]
     },
   });
   var greenIcon = new LeafIcon({
