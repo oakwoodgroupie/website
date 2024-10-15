@@ -12599,12 +12599,39 @@ fieldset:disabled .btn {
   --bs-badge-success-background: var(--bs-branding-green);
 }
 
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #14384C;
+  /* Base color */
+  --bs-btn-border-color: #14384C;
+  /* Base color */
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #113041;
+  /* Slightly darker for hover */
+  --bs-btn-hover-border-color: #0e2a38;
+  /* Darker border for hover */
+  --bs-btn-focus-shadow-rgb: 20, 56, 76;
+  /* RGB equivalent of #14384C */
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0e2a38;
+  /* Darkest for active state */
+  --bs-btn-active-border-color: #0c2430;
+  /* Darker border for active state */
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #14384C;
+  /* Disabled color is same as base */
+  --bs-btn-disabled-border-color: #14384C;
+  /* Disabled border is same as base */
+}
+
 :root {
   --bs-border-radius: 0;
 }
 
 body {
   font-family: var(--bs-body-font-family);
+  background: #FCFAF6;
 }
 
 .navbar-collapse {
@@ -12656,6 +12683,14 @@ body {
 .navbar-nav .nav-link.active {
   position: relative;
   color: var(--bs-link-color-rgb);
+}
+
+.request-demo .card {
+  border: 1px solid #efe9df;
+}
+
+.developments .card {
+  background-color: transparent;
 }
 
 @media (min-width: 1400px) {
