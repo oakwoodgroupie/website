@@ -1,4 +1,4 @@
-// Preloading fonts
+// Preloading fonts to avoid flickering
 const fonts = [
     new FontFace('Satoshi', 'url(/fonts/Satoshi-Variable.woff2)', {
       weight: '200 900',
@@ -18,7 +18,6 @@ const fonts = [
     })
   ];
   
-  // Load the fonts
   fonts.forEach(font => {
     font.load().then((loadedFont) => {
       document.fonts.add(loadedFont);

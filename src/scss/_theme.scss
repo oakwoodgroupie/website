@@ -78,6 +78,17 @@ body {
     }
 }
 
+.property-features {
+    .property-feature {
+        &-label {
+            font-family: 'Bitter';
+            color: var(--bs-branding-green);
+            text-transform: uppercase;
+            font-size: smaller;
+        }
+    }
+}
+
 
 
 
@@ -90,5 +101,12 @@ body {
     .container-xl,
     .container-xxl {
         max-width: 1540px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.1rem;
+        padding-left: 1.1rem;
     }
 }

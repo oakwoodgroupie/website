@@ -1,12 +1,8 @@
 {
     "items": [
         {
-            "text": "Home",
-            "url": "/"
-        },
-        {
             "text": "Developments",
-            "url": "/developments"
+            "url": "/"
         },
         {
             "text": "About Us",
