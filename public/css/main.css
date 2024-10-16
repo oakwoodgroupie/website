@@ -12691,6 +12691,23 @@ body {
   font-size: smaller;
 }
 
+.gallery-image {
+  cursor: pointer;
+  border: 1px solid #efe9df;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+.modal-body img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* Ensures the image fits within the modal while maintaining aspect ratio */
+}
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -12705,6 +12722,13 @@ body {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.1rem;
     padding-left: 1.1rem;
+  }
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 60%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @supports (font-variation-settings: normal) {
@@ -12841,44 +12865,6 @@ h3 {
     bottom: 0px;
     left: 0px;
     width: 100%;
-  }
-}
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-.sticky-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9;
-  animation: fadeInDown 0.5s;
-}
-
-@media (max-width: 768px) {
-  article.px-5 {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  .hero__home .row > * {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
   }
 }
 

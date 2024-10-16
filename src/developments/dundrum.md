@@ -130,9 +130,63 @@ developmentImgAlt: '117a Barton Street, Dundrum'
   </div>
 </div>
 
+{# Images gallery slider #}
+<div class="container py-4 mb-5 pb-5">
+ <h2 class="fw-bold mb-5" data-cue="fadeIn">Floor Plans</h2>
+  <div class="row">
+    <div class="col-4">
+      <img src="/images/developments/dundrum/117_plan_1.jpg" alt="Image 1" class="img-fluid gallery-image" data-bs-target="#galleryModal" data-bs-toggle="modal" data-bs-index="0">
+    </div>
+    <div class="col-4">
+      <img src="/images/developments/dundrum/117_plan_2.jpg" alt="Image 2" class="img-fluid gallery-image" data-bs-target="#galleryModal" data-bs-toggle="modal" data-bs-index="1">
+    </div>
+    <div class="col-4">
+      <img src="/images/developments/dundrum/117_plan_3.jpg" alt="Image 3" class="img-fluid gallery-image" data-bs-target="#galleryModal" data-bs-toggle="modal" data-bs-index="2">
+    </div>
+  </div>
+</div>
+
+<!-- Fullscreen Modal -->
+<div class="modal fade modal-fullscreen" id="galleryModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body text-center position-relative">
+        <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        <img id="modalImage" src="" alt="Gallery Image">
+        <button class="btn btn-light position-absolute top-50 start-0 translate-middle-y" id="prevBtn">&lt;</button>
+        <button class="btn btn-light position-absolute top-50 end-0 translate-middle-y" id="nextBtn">&gt;</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const images = ["/images/developments/dundrum/117_plan_1.jpg", "/images/developments/dundrum/117_plan_2.jpg", "/images/developments/dundrum/117_plan_3.jpg"];
+  let currentIndex = 0;
+
+  document.querySelectorAll('.gallery-image').forEach((img, index) => {
+    img.addEventListener('click', () => {
+      currentIndex = index;
+      document.getElementById('modalImage').src = images[currentIndex];
+    });
+  });
+
+  document.getElementById('prevBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    document.getElementById('modalImage').src = images[currentIndex];
+  });
+
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    document.getElementById('modalImage').src = images[currentIndex];
+  });
+</script>
+
+{# end of images gallery slider #}
+
 {# LOCATION #}
 <div class="container pb-5 mb-5">
-  <h2 class="fw-bold mb-5">Photography Gallery</h2>
+  <h2 class="fw-bold mb-5">Location</h2>
   <div class="row g-4">
     <div class="col-12">
       <div id="map-dundrum" class="p-3" style="height:700px"></div>
