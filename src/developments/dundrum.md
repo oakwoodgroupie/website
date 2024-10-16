@@ -133,14 +133,14 @@ developmentImgAlt: '117a Barton Street, Dundrum'
 {# Images gallery slider #}
 <div class="container py-4 mb-5 pb-5">
  <h2 class="fw-bold mb-5" data-cue="fadeIn">Floor Plans</h2>
-  <div class="row">
-    <div class="col-4">
+  <div class="row g-4">
+    <div class="col-12 col-sm-6 col-lg-4">
       <img src="/images/developments/dundrum/117_plan_1.jpg" alt="Image 1" class="img-fluid gallery-image" data-bs-target="#galleryModal" data-bs-toggle="modal" data-bs-index="0">
     </div>
-    <div class="col-4">
+    <div class="col-12 col-sm-6 col-lg-4">
       <img src="/images/developments/dundrum/117_plan_2.jpg" alt="Image 2" class="img-fluid gallery-image" data-bs-target="#galleryModal" data-bs-toggle="modal" data-bs-index="1">
     </div>
-    <div class="col-4">
+    <div class="col-12 col-sm-6 col-lg-4">
       <img src="/images/developments/dundrum/117_plan_3.jpg" alt="Image 3" class="img-fluid gallery-image" data-bs-target="#galleryModal" data-bs-toggle="modal" data-bs-index="2">
     </div>
   </div>
@@ -151,10 +151,16 @@ developmentImgAlt: '117a Barton Street, Dundrum'
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-body text-center position-relative">
-        <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close position-absolute m-2" data-bs-dismiss="modal" aria-label="Close"></button>
         <img id="modalImage" src="" alt="Gallery Image">
-        <button class="btn btn-light position-absolute top-50 start-0 translate-middle-y" id="prevBtn">&lt;</button>
-        <button class="btn btn-light position-absolute top-50 end-0 translate-middle-y" id="nextBtn">&gt;</button>
+        <button class="btn btn-light btn-prev position-absolute translate-middle-y" id="prevBtn"><svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.3571 28.9392L15.7107 29.2929L16.0643 28.9392L17.496 27.5072L17.8494 27.1537L17.496 26.8002L7.2965 16.5983L31.2139 16.5983H31.7139V16.0983V14.0731V13.5731H31.2139L7.2965 13.5731L17.496 3.37123L17.8494 3.01772L17.496 2.66421L16.0643 1.23218L15.7107 0.878503L15.3571 1.23218L1.86027 14.7322L1.50684 15.0857L1.86027 15.4392L15.3571 28.9392Z" fill="#4DA66B" stroke="#4DA66B"/>
+</svg>
+</button>
+        <button class="btn btn-light btn-next position-absolute translate-middle-y" id="nextBtn"><svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.7276 1.64649L17.374 1.29281L17.0204 1.64649L15.5887 3.07851L15.2353 3.43202L15.5887 3.78553L25.7882 13.9874H1.87085H1.37085V14.4874V16.5126V17.0126H1.87085H25.7882L15.5887 27.2145L15.2353 27.568L15.5887 27.9215L17.0204 29.3535L17.374 29.7072L17.7276 29.3535L31.2244 15.8535L31.5779 15.5L31.2244 15.1465L17.7276 1.64649Z" fill="#4DA66B" stroke="#4DA66B"/>
+</svg>
+</button>
       </div>
     </div>
   </div>
