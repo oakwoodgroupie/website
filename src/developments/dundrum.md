@@ -135,7 +135,7 @@ developmentImgAlt: '117a Barton Street, Dundrum'
   <h2 class="fw-bold mb-5">Photography Gallery</h2>
   <div class="row g-4">
     <div class="col-12">
-      <div id="map-dundrum" class="p-3" style="height:700px">Contact Map</div>
+      <div id="map-dundrum" class="p-3" style="height:700px"></div>
     </div>
   </div>
 </div>
