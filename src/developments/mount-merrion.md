@@ -2,6 +2,7 @@
 header: 'Mount Merrion'
 summary: 'Shaping the future of homebuilding'
 location: 'mount-merrion'
+registerTag: 'mountMerrion'
 developmentImg: '117a_hero_landing.jpg'
 developmentImgAlt: '117a Barton Street, Dundrum'
 ---
@@ -16,7 +17,7 @@ developmentImgAlt: '117a Barton Street, Dundrum'
         <p>The kitchen is complemented by a fully fitted utility room, offering ample storage and convenience.cUpstairs, four well-appointed bedrooms await, including a master suite with an en suite bathroom and custom-built wardrobes. A family bathroom, featuring high-end fixtures, serves the additional bedrooms. An additional top-floor loft offers a versatile space for a home office, guest suite, or recreational area, complete with expansive windows and scenic views.</p>
         <p>Outdoors, the property boasts a granite-paved driveway, lush planting for privacy, and a south-facing garden perfect for outdoor entertaining. With parking for two vehicles, The Hazelwood Residence promises both style and practicality. Located within easy reach of schools, parks, and shopping, and well-served by public transport, this property offers an ideal combination of convenience and tranquility.</p>
         <div class="pt-5">
-          <a class="btn btn-primary btn-lg" href="/brochure">Download Brochure</a>
+          <a class="btn btn-primary btn-lg" href="#registerInterest">Register Your Interest</a>
         </div>
       </div>
     </div>
@@ -138,6 +139,7 @@ developmentImgAlt: '117a Barton Street, Dundrum'
       <div id="map-dundrum" class="p-3" style="height:700px">Contact Map</div>
     </div>
   </div>
+  <div id="registerInterest"></div>
 </div>
 <script>
   var map = L.map("map-dundrum").setView([53.287438, -6.254583], 17);
@@ -164,7 +166,80 @@ developmentImgAlt: '117a Barton Street, Dundrum'
 </script>
 
 
-{# {% include "components/development_details.html" %} #}
+{# Register your interest form #}
+<article class="pb-5 pt-5">
+    <div class="container">
+        <div class="row align-items-center">
+        <div class="col-md-5 mb-5">
+          <h2 class="fw-bold mb-5" data-cue="fadeIn">Register your interest</h2>
+          <p>Email: <a href="mailto:info@oakwoodgroup.ie?subject=I'm%20interested%20in%20Mount%20Merrion%20Development&body=Hi,%20I'm%20interested%20in%20learning%20more%20about%20Mount%20Merrion...">info@oakwoodgroup.ie</a><br>Dublin, Ireland</p>
+        </div>
+        <div class="col-md-7 mb-5 mx-auto">
+            <div class="card p-5 rounded-6">
+                <form class="row g-4" enctype="multipart/form-data" data-netlify="true" id="{{ registerTag }}" name="{{ registerTag }}">
+                    <div class="row mb-3">
+                        <label for="fullName" class="col-sm-4 col-form-label">Full name</label>
+                        <div class="col-sm-8">
+                            <input name="name" type="text" class="form-control" id="fullName"
+                                 aria-label="Your full name" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="emailCareersForm" class="col-sm-4 col-form-label">Email</label>
+                        <div class="col-sm-8">
+                            <input name="email" type="email" class="form-control" id="emailCareersForm"
+                                 aria-label="Your email address" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="phoneCareersForm" class="col-sm-4 col-form-label">Phone</label>
+                        <div class="col-sm-8">
+                            <input name="phone-number" type="tel" class="form-control" id="phoneCareersForm"
+                                 aria-label="+x(xxx)xxx-xx-xx" required>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <h4><label for="tellUsMore">Tell us more</label></h4>
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="additional_info" class="form-control" id="tellUsMore"
+                            aria-label="Tell us more" rows="5"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                    <div class="w-100 mb-4 alert alert-success alert-dismissible fade show align-items-center"
+                        role="alert" id="success" style="display:none">
+                        <div>Thanks for your interest in Mount Merrion. We'll get back to you as soon as possible!</div>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <div class="d-grid text-center mt-7">
+                        <button type="submit" class="btn btn-primary btn-lg">Send your message</button>
+                        <small class="d-block regulatory pt-4 text-center">By submitting this form you are confirming
+                            that the information you provide may be collected, processed, used and retained in
+                            accordance with our <a href="/privacy-policy/">privacy policy</a>.</small>
+                        <div class="result"></div>
+                    </div>
+                </form>
+            </div>
+            <script>
+                document.forms.{{ registerTag }}.addEventListener("submit", (event) => {
+                    event.preventDefault();
+                    const result = document.querySelector(".result");
+                    fetch("/", {
+                        body: new FormData(event.target),
+                        method: "POST",
+                    })
+                        .then(() => document.getElementById('success').style.display = "flex")
+                        .catch((error) =>
+                            alert(error));
+                });
+            </script>
+        </div>
+        </div>
+    </div> <!-- container -->
+</article>
+
 
 
 

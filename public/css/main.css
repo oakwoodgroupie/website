@@ -12636,6 +12636,10 @@ fieldset:disabled .btn {
   --bs-border-radius: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--bs-body-font-family);
   background: #FCFAF6;
