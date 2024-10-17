@@ -95,7 +95,7 @@ developmentImgAlt: '117a Barton Street, Dundrum'
 
 {# PHOTO GALLERY BELOW #}
 <div class="container pb-5 mb-5">
-  <h2 class="fw-bold mb-5" data-cue="fadeIn">Photography Gallery</h2>
+  <h2 class="fw-bold mb-5" data-cue="fadeIn">Gallery</h2>
   <div class="row g-4">
     <div class="col-12">
       <div class="">
