@@ -12688,15 +12688,40 @@ body {
 }
 .navbar-nav .nav-link-active-icon {
   position: absolute;
-  top: 40px;
+  top: 0;
+  /* Initial position */
   left: 50%;
   margin-left: -4px;
+  opacity: 0;
+  /* Initially hidden */
+  display: none;
+  /* Initially not rendered */
+  transition: top 0.5s ease-in;
+  /* Transition for the top movement */
 }
 .navbar-nav .nav-link.active {
   position: relative;
   color: var(--bs-link-color-rgb);
 }
+.navbar-nav .nav-link.active .nav-link-active-icon {
+  display: block;
+  /* Make it visible */
+  animation: fadeInMove 0.5s forwards;
+  /* Trigger the animation */
+}
 
+/* Define keyframes for the animation */
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 40px;
+    /* Final position */
+  }
+}
 .request-demo .card {
   border: 1px solid #efe9df;
 }
@@ -12831,6 +12856,9 @@ h5 {
 
 h2 {
   font-size: 3rem;
+  border-left: 10px solid var(--bs-typography-highlight-text);
+  padding-left: 20px;
+  padding-top: 4px;
 }
 
 h3 {

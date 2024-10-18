@@ -1,11 +1,11 @@
 ---
 title: "About Us"
 header: "About us"
-summary: "Building a legacy of excellence, sustainability, and craftsmanship."
+summary: "Where excellence and sustainability in building intersect"
 layout: "layouts/page.html"
 ---
 
-<article class="key-results my-5 py-5">
+<article class="key-results">
   
   <div class="container mb-5">
   <div class="row g-4 pt-5 pb-5 justify-content-between">
