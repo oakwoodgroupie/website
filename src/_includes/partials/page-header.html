@@ -40,9 +40,11 @@
         {% endif %}
       </div>
     </div>
+    {% if developmentImg %}
     <div class="development-hero-image">
       <img src="/images/developments/{{ location }}/{{ developmentImg }}" alt="{{ developmentImgAlt }}" />
     </div>
+    {% endif %}
   </div>
 </div>
 {% endif %}
