@@ -4,8 +4,8 @@ summary: 'Modern living in a prestigious location with expansive space and luxur
 location: 'mount-merrion'
 registerTag: 'mountMerrion'
 reference: 'Mount Merrion'
-developmentImg: '117a_hero_landing.jpg'
-developmentImgAlt: '117a Barton Street, Dundrum'
+developmentImg: 'MM_hero_landing.jpg'
+developmentImgAlt: 'Moun Merrion Hero Image'
 ---
 
 
