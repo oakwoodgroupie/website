@@ -11,7 +11,7 @@ developmentImgAlt: '117a Barton Street, Dundrum'
   <div class="row g-4 pt-5 pb-5 justify-content-between">
     <div class="col-md-6">
       <div class="">
-        <p>The exterior of the houses fit in with their environment, with the same pebble dash and brick façade as their neighbours. Inside, we created a home with all modern needs catered for, the downstairs layout has separate living rooms, a room that could be a study, den or playroom, and to the back of the house, a large kitchen diner, with hand built kitchens by Michael Cox. All of our homes come with large, fitted utilities, custom-built wardrobes, extra-high ceilings and Villeroy & Boch bathrooms. Excellent insulation, air-source heat pumps, Aluclad windows and airtight membranes that wrap around the houses work together to make sure our homes have the highest A Ber ratings.</p>
+        <p>The exterior of the houses fit in with their environment, with the same pebble dash and brick façade as their neighbours. Inside is a home with all modern needs catered for, the downstairs layout has separate living rooms, a room that could be a study, den or playroom, and to the back of the house, a large kitchen diner, with hand-built kitchens by Michael Cox. All of Oakwood’s homes come with large, fitted utilities, custom-built wardrobes, extra-high ceilings and Villeroy & Boch bathrooms. Excellent insulation, air-source heat pumps, Aluclad windows and airtight membranes that wrap around the houses work together to make sure the houses have the highest A Ber ratings.</p>
       </div>
     </div>
     <div class="col-md-5 property-features">
