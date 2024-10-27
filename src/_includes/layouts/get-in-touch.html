@@ -38,7 +38,7 @@
             <div>Your request has been sent successfully. We'll be in touch very soon!</div>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
-          <form class="row g-4" data-netlify="true" id="requestDemo">
+          <form class="row g-4" data-netlify="true" id="contactUs">
             <div class="col-12">
               <label for="inputName" class="form-label">Name</label>
               <input name="name" type="text" class="form-control" id="inputName" required>
@@ -76,7 +76,7 @@
         </div>
 
         <script>
-          let formElem = document.getElementById('requestDemo');
+          let formElem = document.getElementById('contactUs');
           if (formElem) {
             const handleSubmit = (e) => {
               e.preventDefault()
