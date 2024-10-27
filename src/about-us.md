@@ -1,7 +1,7 @@
 ---
 title: "About Us"
 header: "About us"
-summary: "Where excellence and sustainability in building intersect"
+summary: ""
 layout: "layouts/page.html"
 ---
 
