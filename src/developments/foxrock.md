@@ -1,7 +1,7 @@
 ---
-header: 'BlackRock'
+header: 'Foxrock'
 summary: 'Shaping the future of homebuilding'
-location: 'blackrock'
+location: 'foxrock'
 developmentImg: '117a_hero_landing.jpg'
 developmentImgAlt: '117a Barton Street, Dundrum'
 ---

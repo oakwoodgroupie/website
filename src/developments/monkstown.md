@@ -78,37 +78,37 @@ developmentImgAlt: '34 Monkstown'
   <div class="row g-4">
     <div class="col-12">
       <div class="">
-        <img src="/images/developments/monkstown/34_gallery_1.jpg" alt="117a Gallery Image 1">
+        <img src="/images/developments/monkstown/34_gallery_1.jpg" alt="34 Gallery Image 1">
       </div>
     </div>    
     <div class="col-12 col-md-6">
      <div class="">
-        <img src="/images/developments/monkstown/34_gallery_2.jpg" alt="117a Gallery Image 1">
+        <img src="/images/developments/monkstown/34_gallery_2.jpg" alt="34 Gallery Image 1">
       </div>
     </div>
     <div class="col-12 col-md-6">
       <div class="">
-        <img src="/images/developments/monkstown/34_gallery_3.jpg" alt="117a Gallery Image 1">
+        <img src="/images/developments/monkstown/34_gallery_3.jpg" alt="34 Gallery Image 1">
       </div>
     </div>
     <div class="col-12">
       <div class="">
-        <img src="/images/developments/monkstown/34_gallery_4.jpg" alt="117a Gallery Image 1">
+        <img src="/images/developments/monkstown/34_gallery_4.jpg" alt="34 Gallery Image 1">
       </div>
     </div>    
     <div class="col-12 col-md-6">
       <div class="">
-        <img src="/images/developments/monkstown/34_gallery_5.jpg" alt="117a Gallery Image 1">
+        <img src="/images/developments/monkstown/34_gallery_5.jpg" alt="34 Gallery Image 1">
       </div>
     </div>
     <div class="col-12 col-md-6">
       <div class="">
-        <img src="/images/developments/monkstown/34_gallery_6.jpg" alt="117a Gallery Image 1">
+        <img src="/images/developments/monkstown/34_gallery_6.jpg" alt="34 Gallery Image 1">
       </div>
     </div>
     <div class="col-12">
       <div class="">
-        <img src="/images/developments/monkstown/34_gallery_7.jpg" alt="117a Gallery Image 1">
+        <img src="/images/developments/monkstown/34_gallery_7.jpg" alt="34 Gallery Image 1">
       </div>
     </div>  
   </div>
