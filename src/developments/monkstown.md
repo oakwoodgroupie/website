@@ -1,6 +1,6 @@
 ---
 header: 'Monkstown'
-summary: 'Luxurious homes with <br>breathtaking views and meticulous attention to detail.'
+summary: 'Luxurious homes with meticulous attention to detail.'
 location: 'monkstown'
 developmentImg: '34_hero_landing.jpg'
 developmentImgAlt: '34 Monkstown'

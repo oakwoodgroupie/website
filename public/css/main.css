@@ -12689,15 +12689,11 @@ body {
 .navbar-nav .nav-link-active-icon {
   position: absolute;
   top: 0;
-  /* Initial position */
   left: 50%;
   margin-left: -4px;
   opacity: 0;
-  /* Initially hidden */
   display: none;
-  /* Initially not rendered */
   transition: top 0.5s ease-in;
-  /* Transition for the top movement */
 }
 .navbar-nav .nav-link.active {
   position: relative;
@@ -12705,12 +12701,9 @@ body {
 }
 .navbar-nav .nav-link.active .nav-link-active-icon {
   display: block;
-  /* Make it visible */
   animation: fadeInMove 0.5s forwards;
-  /* Trigger the animation */
 }
 
-/* Define keyframes for the animation */
 @keyframes fadeInMove {
   0% {
     opacity: 0;
@@ -12719,7 +12712,6 @@ body {
   100% {
     opacity: 1;
     top: 40px;
-    /* Final position */
   }
 }
 .request-demo .card {
@@ -12792,6 +12784,32 @@ body {
     max-width: 60%;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media (max-width: 576px) {
+  .body-about-us .header__development-landing.pt-5 {
+    padding-bottom: 0 !important;
+  }
+  .body-about-us .header__development-landing.pt-5 .pb-5 {
+    padding-bottom: 0 !important;
+  }
+  .body-about-us .header__development-landing.pt-5 .pt-5 {
+    padding-top: 1.2rem !important;
+  }
+  .navbar-nav .nav-link-active-icon {
+    position: static;
+    margin-left: 5px;
+    opacity: 1;
+    display: inline-block;
+    transition: none;
+  }
+  .navbar-nav .nav-link.active {
+    position: relative;
+    color: var(--bs-link-color-rgb);
+  }
+  .navbar-nav .nav-link.active .nav-link-active-icon {
+    display: inline-block;
+    opacity: 1;
   }
 }
 @supports (font-variation-settings: normal) {

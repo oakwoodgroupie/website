@@ -1,6 +1,6 @@
 ---
 header: 'Mount Merrion'
-summary: 'Modern living in a prestigious location with expansive space and luxury finishes.'
+summary: 'Spacious and luxurious new homes in the heart of Mount Merrion.'
 location: 'mount-merrion'
 registerTag: 'mountMerrion'
 reference: 'Mount Merrion'
@@ -13,10 +13,7 @@ developmentImgAlt: 'Moun Merrion Hero Image'
   <div class="row g-4 pt-5 pb-5 justify-content-between">
     <div class="col-md-6">
       <div class="">
-        <p>Four new 4-bed semi-detached houses on Mount Merrion’s Wilson Road, in the heart of south Dublin. A-rated homes built over three levels with expansive living areas on the ground floor to include living room, dining room and large kitchen / living area and utility. Three bedrooms (two ensuite) and family bathroom on the first floor with an extensive array of accommodation on the top floor, ensuite bedroom, study areas, sitting room, and balcony terrace. This will be a rare opportunity to acquire an impressive new home in this prestigious location with an area of 190 sq ms and parking for two cars.</p>
-        <div class="pt-5">
-          <a class="btn btn-primary btn-lg" href="#registerInterest">Register Your Interest</a>
-        </div>
+        <p>Four new 4-bed semi-detached houses on Mount Merrion’s Wilson Road, in one of south Dublin’s most prestigious locations. A-rated homes built over three levels with expansive living areas on the ground floor to include living room, dining room and large kitchen / living area and utility. Three bedrooms (two ensuite) and family bathroom on the first floor with an extensive array of accommodation on the top floor, ensuite bedroom, study areas, sitting room, and balcony terrace. This will be a rare opportunity to acquire an impressive new home in this prestigious location with an area of 190 sq ms and parking for two cars.</p>
       </div>
     </div>
     <div class="col-md-5 property-features">
@@ -76,19 +73,6 @@ developmentImgAlt: 'Moun Merrion Hero Image'
     </div>
   </div>
 </div>
-
-{# PHOTO GALLERY BELOW #}
-<div class="container pb-5 mb-5">
-  <h2 class="fw-bold mb-5" data-cue="fadeIn">Gallery</h2>
-  <div class="row g-4">
-    <div class="col-12">
-      <div class="">
-        <img src="/images/developments/mount-merrion/MM_gallery_1.jpg" alt="Mount Merrion Gallery Image 1">
-      </div>
-    </div>    
-  </div>
-</div>
-{# end of photo gallery #}
 
 {# Images gallery slider #}
 <div class="container py-4 mb-5 pb-5">
@@ -161,7 +145,7 @@ developmentImgAlt: 'Moun Merrion Hero Image'
   <div id="registerInterest"></div>
 </div>
 <script>
-  var map = L.map("map-dundrum").setView([53.297146,-6.212435], 17);
+  var map = L.map("map-dundrum").setView([53.297302,-6.212026], 17);
   L.tileLayer(
     "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
     {
@@ -177,7 +161,7 @@ developmentImgAlt: 'Moun Merrion Hero Image'
   var greenIcon = new LeafIcon({
     iconUrl: "/images/marker.svg",
   });
-  L.marker([53.297146,-6.212435], { icon: greenIcon })
+  L.marker([53.297302,-6.212026], { icon: greenIcon })
     .bindPopup(
       "4 Houses (55,56,57,58) in Wilson Road, Mount Merrion, BlackRock, Dublin, A94 N6C7"
     )
@@ -187,7 +171,7 @@ developmentImgAlt: 'Moun Merrion Hero Image'
 
 
 {# Register your interest form #}
-<article class="pb-5 pt-5">
+{# <article class="pb-5 pt-5">
     <div class="container">
         <div class="row align-items-center">
         <div class="col-md-5 mb-5">
@@ -264,7 +248,7 @@ developmentImgAlt: 'Moun Merrion Hero Image'
         </div>
         </div>
     </div> <!-- container -->
-</article>
+</article> #}
 
 
 
