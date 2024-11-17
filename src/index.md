@@ -1,5 +1,5 @@
 ---
 title: 'Oakwood Group'
-metaDesc: 'Shaping the future of homebuilding'
+metaDesc: ''
 layout: 'layouts/home.html'
 ---

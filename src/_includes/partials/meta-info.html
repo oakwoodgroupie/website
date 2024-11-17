@@ -1,13 +1,24 @@
 {% set pageTitle = title + ' - ' + site.name %}
-{%if not title %}
+{% if not title %}
 {% set pageTitle = header + ' - ' + site.name %}
 {% endif %}
-{# We don't want any duplication. This is likely for the home page. #}
-{% if site.name === title %} {% set pageTitle = title %} {% endif %}
+
+{# Special case for the home page: Avoid duplication in the title and meta description #}
+{% if page.url == '/' %}
+{% set pageTitle = site.name %}
+{% set metaDesc = site.name %}
+{% else %}
+{# Fallback for meta description if not explicitly set #}
+{% if metaDesc %}
+{% set metaDesc = metaDesc + ' - ' + site.name %}
+{% else %}
+{% set metaDesc = header + ' - ' + site.name %}
+{% endif %}
+{% endif %}
+
 {% set siteTitle = site.name %}
 {% set currentUrl = site.url + page.url %}
-{% if metaDesc %} {% set metaDesc = metaDesc + ' - ' + site.name %} {% endif %}
-{% if not metaDesc %} {% set metaDesc = header + ' - ' + site.name %} {% endif %}
+
 <title>{{ pageTitle }}</title>
 <link rel="canonical" href="{{ currentUrl }}">
 <meta name="description" content="{{ pageTitle }}">
