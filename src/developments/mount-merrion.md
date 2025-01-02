@@ -78,15 +78,15 @@ developmentImgAlt: 'Moun Merrion Hero Image'
 <div class="container py-4 mb-5 pb-5">
  <h2 class="fw-bold mb-5" data-cue="fadeIn">Floor Plans</h2>
   <div class="row g-4">
-    <div class="col-12 col-sm-6 col-lg-4">
-      <img src="/images/developments/mount-merrion/MM_plan_1.jpg" alt="Image 1" class="img-fluid gallery-image" data-bs-target="#galleryModal" data-bs-toggle="modal" data-bs-index="0">
+    <div class="col-12 col-sm-6 col-lg-6">
+      <img src="/images/developments/mount-merrion/mm_plan1.jpg" alt="Image 1" class="img-fluid gallery-image" data-bs-target="#galleryModal" data-bs-toggle="modal" data-bs-index="0">
     </div>
-    <div class="col-12 col-sm-6 col-lg-4">
+    <div class="col-12 col-sm-6 col-lg-6">
+      <img src="/images/developments/mount-merrion/mm_plan1.jpg" alt="Image 2" class="img-fluid gallery-image" data-bs-target="#galleryModal" data-bs-toggle="modal" data-bs-index="1">
+    </div>
+    <!-- <div class="col-12 col-sm-6 col-lg-4">
       <img src="/images/developments/mount-merrion/MM_plan_2.jpg" alt="Image 2" class="img-fluid gallery-image" data-bs-target="#galleryModal" data-bs-toggle="modal" data-bs-index="1">
-    </div>
-    <div class="col-12 col-sm-6 col-lg-4">
-      <img src="/images/developments/mount-merrion/MM_plan_2.jpg" alt="Image 2" class="img-fluid gallery-image" data-bs-target="#galleryModal" data-bs-toggle="modal" data-bs-index="1">
-    </div>
+    </div> -->
   </div>
 </div>
 
