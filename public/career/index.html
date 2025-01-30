@@ -281,50 +281,77 @@
   <div class="modal-content">
       <span class="close-btn" onclick="closeForm()">&times;</span>
       <h2 id="jobTitle">Apply for Job</h2>
-      <form name="apply-job" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="return handleSubmit(event)">
-        <input type="hidden" name="job" id="jobPosition">
-        <input type="hidden" name="form-name" value="apply-job" />
+     
 
-        <label for="name">Full Name:</label>
-        <input type="text" name="name" required>
-    
-        <label for="email">Email:</label>
-        <input type="email" name="email" required>
-        <label for="phone">Phone:</label>
-        <input type="number" name="phone" required>
-        <label for="resume">Upload CV:</label>
-        <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
-    
-        <button type="submit">Submit Application</button>
-    </form>
+    <div class="w-100 mb-4 alert alert-success alert-dismissible fade show align-items-center" role="alert"
+    id="success" style="display:none">
+    <svg class="bi flex-shrink-0 me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+      fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16" aria-label="Success:">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+      <path
+        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+    </svg>
+    <div>Your request has been sent successfully. We'll be in touch very soon!</div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <form class="row g-4" data-netlify="true" id="contactjob">
+    <input type="hidden" name="job" id="jobPosition">
 
-
-
-
-
-
-    
-    <div id="successMessage" style="display: none; color: green; margin-top: 10px;">
-      ✅ Form submitted successfully!
+    <div class="col-12">
+      <label for="inputName" class="form-label">Name</label>
+      <input name="name" type="text" class="form-control" id="inputName" required>
     </div>
+    <div class="col-12">
+      <label for="inputEmail" class="form-label">Email</label>
+      <input name="email" type="email" class="form-control" id="inputEmail" required>
+    </div>
+    <div class="col-12">
+      <label for="inputPhone" class="form-label">Phone number</label>
+      <input name="phone-number" type="tel" class="form-control" id="inputPhone" required>
+    </div>
+    <div class="col-12">
+      <label for="textareaTellusmore" class="form-label">Tell us more</label>
+      <textarea name="address" class="form-control" id="textareaTellusmore" rows="5" required></textarea>
+    </div>
+    <div class="col-12">
+      <div data-netlify-recaptcha="true"></div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-lg btn-primary w-100">Submit your message</button>
+      <small class="d-block regulatory pt-4 text-center">By submitting this form you are confirming that the
+        information you provide may be collected, processed, used and retained in accordance with our <a
+          href="/privacy-policy/">privacy policy</a>.</small>
+    </div>
+  </form>
+
+
+    
+   
   </div>
 </div>
 
   </main>
   <script>
-    function handleSubmit(event) {
-        event.preventDefault(); // Prevent page reload
-
-        // Show success message
-        document.getElementById("successMessage").style.display = "block";
-
-        // Hide form after submission
-        document.querySelector("form").style.display = "none";
-
-        // Submit the form data
-        event.target.submit();
+    let formElem = document.getElementById('contactjob');
+    if (formElem) {
+      const handleSubmit = (e) => {
+        e.preventDefault()
+        let formData = new FormData(formElem)
+        fetch('/', {
+          method: 'POST',
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString()
+        }).then(() => document.getElementById('success').style.display = "flex").catch((error) =>
+          alert(error))
+      }
+      formElem.addEventListener("submit", handleSubmit)
     }
-</script>
+
+    document.getElementById('selectIndustry').addEventListener('change', function () {
+      let style = this.value == "other" ? 'block' : 'none';
+      document.getElementById('otherIndustry').style.display = style;
+    });
+  </script>
   <script>
     function openForm(jobTitle) {
         document.getElementById('jobTitle').innerText = "Apply for " + jobTitle;
